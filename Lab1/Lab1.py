@@ -13,6 +13,7 @@ res2 = (math.acos((a * a + c * c - b * b) / (a * c * 2)) * 180) / math.pi
 res3 = (math.acos((b * b + a * a - c * c) / (b * a * 2)) * 180) / math.pi
 print(a)
 print(b)
+
 print(c)
 print(res1)
 print(res2)
