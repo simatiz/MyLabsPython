@@ -1,3 +1,4 @@
+print("Enter a string:", end = " ")
 string = input()
 list = string.split()
 words = []
@@ -15,9 +16,10 @@ def printresult(words, repetitions):
     for i in range(len(words)):
         print("Word: " + words[i])
         print("Number of repetitions: ", repetitions[i])
-    print("List without duplicates: ", end = " ")
+    print("String without duplicates:", end = " ")
     for i in words:
         print(i, end=' ')
+    print(end = '\n')
 
 filllists(list, words, repetitions)
 printresult(words, repetitions)
