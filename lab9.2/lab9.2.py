@@ -12,14 +12,13 @@ def filllists(list, words, repetitions):
         else:
             repetitions[words.index(x)]+=1
 
-def printresult(words, repetitions):
+def printresult(words, newstring, repetitions):
     for i in range(len(words)):
         print("Word: " + words[i])
         print("Number of repetitions: ", repetitions[i])
-    print("String without duplicates:", end = " ")
-    for i in words:
-        print(i, end=' ')
+    print("String without duplicates: ", newstring)
     print(end = '\n')
 
 filllists(list, words, repetitions)
-printresult(words, repetitions)
+newstring = " ".join(words)
+printresult(words, newstring, repetitions)
